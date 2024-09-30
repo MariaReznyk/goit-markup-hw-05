@@ -471,5 +471,94 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Window -->
+    <div class="modal-backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <p class="modal-label">Leave your contacts and we will call you back</p>
+        <form class="callback-form">
+          <div class="callback-form-wrapper">
+            <label class="callback-form-label" for="user-name">Name</label>
+            <div class="callback-form-input-wrapper">
+              <input
+                class="callback-form-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="callback-form-icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="callback-form-wrapper">
+            <label class="callback-form-label" for="user-tel">Phone</label>
+            <div class="callback-form-input-wrapper">
+              <input
+                class="callback-form-input"
+                type="tel"
+                id="user-tel"
+                name="user-tel"
+              />
+              <svg class="callback-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="callback-form-wrapper">
+            <label class="callback-form-label" for="user-email">Email</label>
+            <div class="callback-form-input-wrapper">
+              <input
+                class="callback-form-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="callback-form-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="callback-form-wrapper">
+            <label class="callback-form-label" for="user-comment"
+              >Comment</label
+            >
+            <textarea
+              class="callback-form-comment"
+              name="user-comment"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="callback-form-checkbox-wrapper">
+            <input
+              class="callback-form-checkbox visually-hidden"
+              type="checkbox"
+              id="privacy-policy"
+              name="privacy-policy"
+              value="true"
+            />
+            <label class="callback-form-checkbox-label" for="privacy-policy">
+              <span class="callback-form-custom-checkbox">
+                <svg
+                  class="callback-form-checkbox-icon"
+                  width="10px"
+                  height="8px"
+                >
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg> </span
+              >I accept the terms and conditions of the
+              <a class="callback-form-policy-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="callback-submit-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
