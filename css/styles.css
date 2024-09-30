@@ -464,12 +464,19 @@ address {font-style: normal;}
     background-color: #31d0aa;
 }
 
+.footer-wrapper-subscribe {
+    width: 453px;
+}
+
+.subscribe-form {
+    display: flex;
+    gap: 24px;
+}
+
 .subscribe-form-input {
-    display: inline;
     width: 264px;
     height: 40px;
     padding-left: 16px;
-    margin-right: 23px;
     border-radius: 4px;
     border: 1px solid white;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -489,9 +496,10 @@ address {font-style: normal;}
 }
 
 .subscribe-btn {
-    position: relative;
-    display: inline;
-    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 165px;
     height: 40px;
     border-radius: 4px;
     padding: 8px 24px;
@@ -513,11 +521,8 @@ address {font-style: normal;}
 }
 
 .subscribe-btn-icon {
-    position: absolute;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
     fill: white;
+    margin-left: 16px;
 }
 
 /* modal window */
