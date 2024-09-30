@@ -412,7 +412,8 @@ address {font-style: normal;}
 
 .page-footer {
     padding: 100px 0;
-    background-color: #2e2f42;}
+    background-color: #2e2f42;
+}
 
 .footer-container {
     display: flex;
@@ -443,11 +444,12 @@ address {font-style: normal;}
 
 .footer-wrapper-social {
     width: 208px;
+    margin-right: 80px;
 }
 
 .footer-wrapper-social .social-list {gap: 16px;}
 
-.footer-social-list {
+.footer-social-list, .footer-subscribe-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -460,6 +462,62 @@ address {font-style: normal;}
 .footer-wrapper-social .social-list-link:focus
 {
     background-color: #31d0aa;
+}
+
+.subscribe-form-input {
+    display: inline;
+    width: 264px;
+    height: 40px;
+    padding-left: 16px;
+    margin-right: 23px;
+    border-radius: 4px;
+    border: 1px solid white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: white;
+    outline: none;
+}
+
+.subscribe-form-input::placeholder {
+    font-size: 12px;
+    line-height: 200%;
+    letter-spacing: 0.04em;
+    color: white;
+}
+
+.subscribe-btn {
+    position: relative;
+    display: inline;
+    width: 165px;
+    height: 40px;
+    border-radius: 4px;
+    padding: 8px 24px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    text-align: start;
+    color: white;
+    background-color: #4d5ae5;
+    border: none;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: #404BBF;
+}
+
+.subscribe-btn-icon {
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    fill: white;
 }
 
 /* modal window */
